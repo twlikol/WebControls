@@ -1,4 +1,4 @@
-ASP.NET Custom WebControls by Likol Lee
+ASP.NET Custom WebControls
 ===========
 Share my development ASP.NET web controls, if you are interested can take a look.
 
