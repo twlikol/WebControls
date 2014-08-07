@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB816D3F-7A07-4181-B59C-756AB8BC152C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Likol.Web</RootNamespace>
+    <AssemblyName>Likol.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Likol.Web.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.50731.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\AjaxControlToolkit.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.cs" />
+    <Compile Include="UI\Dialog.cs" />
+    <None Include="Likol.Web.snk" />
+    <Compile Include="UI\Validation\DialogBoxImageValidator.cs" />
+    <Compile Include="UI\Validation\DoubleImageValidator.cs" />
+    <Compile Include="UI\Validation\IntegerImageValidator.cs" />
+    <Compile Include="UI\WebControls\ImagePicker.cs" />
+    <Compile Include="UI\WebControls\ImageView.cs" />
+    <Compile Include="UI\WebControls\ImageViewItemClickEventHandler.cs" />
+    <Compile Include="UI\WebControls\ImageViewItemClickEventArgs.cs" />
+    <Compile Include="UI\WebControls\NumberBox.cs" />
+    <Compile Include="UI\WebControls\NumberBoxType.cs" />
+    <Compile Include="UI\WebControls\Pager.cs" />
+    <Compile Include="UI\WebControls\RepeaterPager.cs" />
+    <Compile Include="UI\WebControls\SelectKeyValueCollection.cs" />
+    <Compile Include="UI\WebControls\SelectKeyValue.cs" />
+    <Compile Include="UI\WebControls\SearchKeyValue.cs" />
+    <Compile Include="UI\WebControls\SearchKeyValueCollection.cs" />
+    <Compile Include="UI\WebControls\CheckBoxField.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\CoreResourceAccessor.cs" />
+    <Compile Include="Resources\ResourceManager.cs" />
+    <Compile Include="UI\DataBindingUtil.cs" />
+    <Compile Include="UI\Validation\CompareImageValidator.cs" />
+    <Compile Include="UI\Validation\DateImageValidator.cs" />
+    <Compile Include="UI\Validation\RegularExpressionImageValidator.cs" />
+    <Compile Include="UI\WebControls\BaseBoundField.cs" />
+    <Compile Include="UI\WebControls\CompositeControl.cs" />
+    <Compile Include="UI\WebControls\ContextControl.cs" />
+    <Compile Include="UI\WebControls\ContextMenu.cs" />
+    <Compile Include="UI\WebControls\ContextMenuButtonItem.cs" />
+    <Compile Include="UI\WebControls\ContextMenuItem.cs" />
+    <Compile Include="UI\WebControls\ContextMenuItemClickEventArgs.cs" />
+    <Compile Include="UI\WebControls\ContextMenuItemClickEventHandler.cs" />
+    <Compile Include="UI\WebControls\ContextMenuItemCollection.cs" />
+    <Compile Include="UI\WebControls\ContextMenuLinkItem.cs" />
+    <Compile Include="UI\WebControls\ContextMenuSplitItem.cs" />
+    <Compile Include="UI\WebControls\DropDownButton.cs" />
+    <Compile Include="UI\WebControls\DateBox.cs" />
+    <Compile Include="UI\WebControls\DateRangeBox.cs" />
+    <Compile Include="UI\WebControls\DateTimeField.cs" />
+    <Compile Include="UI\WebControls\DialogBox.cs" />
+    <Compile Include="UI\WebControls\DropDownButtonMode.cs" />
+    <Compile Include="UI\WebControls\DropDownList.cs" />
+    <Compile Include="UI\WebControls\DropDownItem.cs" />
+    <Compile Include="UI\WebControls\DropDownItemCollection.cs" />
+    <Compile Include="UI\WebControls\Expander.cs" />
+    <Compile Include="UI\WebControls\GridViewPager.cs" />
+    <Compile Include="UI\WebControls\GroupButton.cs" />
+    <Compile Include="UI\WebControls\GroupButtonItem.cs" />
+    <Compile Include="UI\WebControls\GroupButtonItemCollection.cs" />
+    <Compile Include="UI\WebControls\GroupButtonMode.cs" />
+    <Compile Include="UI\WebControls\IconField.cs" />
+    <Compile Include="UI\WebControls\IconFieldRule.cs" />
+    <Compile Include="UI\WebControls\IconFieldRuleCollection.cs" />
+    <Compile Include="UI\WebControls\IContextControl.cs" />
+    <Compile Include="UI\WebControls\ImageButton.cs" />
+    <Compile Include="UI\WebControls\ImageButtonMode.cs" />
+    <Compile Include="UI\WebControls\ISearchKeyControl.cs" />
+    <Compile Include="UI\WebControls\IWindowPanelContent.cs" />
+    <Compile Include="UI\WebControls\LinkButtonField.cs" />
+    <Compile Include="UI\WebControls\MultiItemBox.cs" />
+    <Compile Include="UI\WebControls\NavigationBar.cs" />
+    <Compile Include="UI\WebControls\NavigationBarItem.cs" />
+    <Compile Include="UI\WebControls\NavigationBarItemCollection.cs" />
+    <Compile Include="UI\WebControls\NavigationBarMenuItemClickEventArgs.cs" />
+    <Compile Include="UI\WebControls\NavigationBarMenuItemClickEventHandler.cs" />
+    <Compile Include="UI\WebControls\PanelHeightType.cs" />
+    <Compile Include="UI\WebControls\PanelSizeMode.cs" />
+    <Compile Include="UI\WebControls\PanelWidthType.cs" />
+    <Compile Include="UI\WebControls\RadioButtonField.cs" />
+    <Compile Include="UI\WebControls\ScrollGridView.cs" />
+    <Compile Include="UI\WebControls\ScrollPanel.cs" />
+    <Compile Include="UI\WebControls\SearchKeyItem.cs" />
+    <Compile Include="UI\WebControls\SearchKeyItemCollection.cs" />
+    <Compile Include="UI\WebControls\SearchKeyPanel.cs" />
+    <Compile Include="UI\WebControls\Spinner.cs" />
+    <Compile Include="UI\WebControls\SplitButton.cs" />
+    <Compile Include="UI\WebControls\SplitButtonMode.cs" />
+    <Compile Include="UI\WebControls\SplitterPanel.cs" />
+    <Compile Include="UI\WebControls\SplitterPanelContainer.cs" />
+    <Compile Include="UI\WebControls\SplitterPanelType.cs" />
+    <Compile Include="UI\WebControls\TabStrip.cs" />
+    <Compile Include="UI\WebControls\TabStripItem.cs" />
+    <Compile Include="UI\WebControls\TabStripItemCollection.cs" />
+    <Compile Include="UI\WebControls\TabStripMode.cs" />
+    <Compile Include="UI\WebControls\TextField.cs" />
+    <Compile Include="UI\WebControls\TextFieldRule.cs" />
+    <Compile Include="UI\WebControls\TextFieldRuleCollection.cs" />
+    <Compile Include="UI\Validation\CommonValidatorRender.cs" />
+    <Compile Include="UI\Validation\RequiredFieldImageValidator.cs" />
+    <Compile Include="UI\WebControls\WindowPanel.cs" />
+    <Compile Include="UI\WebControls\WindowPanelContentControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\WebControlUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\Core.js" />
+    <EmbeddedResource Include="Resources\Scripts\SplitterPanel.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\NumberBox.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\ScrollGridView.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\PagerFirst.gif" />
+    <EmbeddedResource Include="Resources\Images\PagerFirstOver.gif" />
+    <EmbeddedResource Include="Resources\Images\PagerLast.gif" />
+    <EmbeddedResource Include="Resources\Images\PagerLastOver.gif" />
+    <EmbeddedResource Include="Resources\Images\PagerNext.gif" />
+    <EmbeddedResource Include="Resources\Images\PagerNextOver.gif" />
+    <EmbeddedResource Include="Resources\Images\PagerPrev.gif" />
+    <EmbeddedResource Include="Resources\Images\PagerPrevOver.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\PagerSplit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\ContextControl.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\SearchKeyPanel.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\SearchKeyPanelClear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\DialogBox.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\DateBox.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\DropDownListArrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\DropDownList.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\DropDownListSelected.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\ValidatorError.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\NavigationBar.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\SplitButton.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\SplitButtonArrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\DropDownButton.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\DropDownButtonArrow.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\TabStrip.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\BrowserDetect.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\WindowPanel.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\WindowPanelClose.gif" />
+    <EmbeddedResource Include="Resources\Images\WindowPanelMax.gif" />
+    <EmbeddedResource Include="Resources\Images\WindowPanelMin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\Spinner.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\Spinner.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\Expander.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\ExpanderCollapse.gif" />
+    <EmbeddedResource Include="Resources\Images\ExpanderExpand.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\ScrollGridView2.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\ScrollPanel.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\DialogBox.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Scripts\ImagePicker.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Images\ImagePicker.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\MicrosoftAjax\ajaxmin.tasks" />
+  <PropertyGroup>
+    <ResGenDependsOn>
+      MinifyJavaScript;
+      $(ResGenDependsOn)
+    </ResGenDependsOn>
+  </PropertyGroup>
+  <Target Name="MinifyJavaScript" Condition=" '$(ConfigurationName)'=='Release' ">
+    <Copy SourceFiles="@(EmbeddedResource)" DestinationFolder="$(IntermediateOutputPath)" Condition="'%(Extension)'=='.js'">
+      <Output TaskParameter="DestinationFiles" ItemName="EmbeddedJavaScriptResource" />
+    </Copy>
+    <AjaxMin JsSourceFiles="@(EmbeddedJavaScriptResource)" JsSourceExtensionPattern="\.js$" JsTargetExtension=".js" />
+    <ItemGroup>
+      <EmbeddedResource Remove="@(EmbeddedResource)" Condition="'%(Extension)'=='.js'" />
+      <EmbeddedResource Include="@(EmbeddedJavaScriptResource)" />
+      <FileWrites Include="@(EmbeddedJavaScriptResource)" />
+    </ItemGroup>
+  </Target>
+</Project>
