@@ -32,3 +32,7 @@ Web controls list
 * TabStrip
 * WindowPanel
 
+Reference assemblies
+===========
+* AjaxToolkit - https://ajaxcontroltoolkit.codeplex.com/
+
